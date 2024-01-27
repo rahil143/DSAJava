@@ -11,7 +11,7 @@ import java.util.Random;
  * @author Ronaldo
  */
 public class Sorting {
-    public static int arrayLenght=2500;
+    public static int arrayLenght=25000;
     
     //To display Array
     public static void printAray(int[] a){

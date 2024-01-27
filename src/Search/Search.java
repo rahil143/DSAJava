@@ -37,8 +37,12 @@ public class Search {
     public static void lenearSearch(int[] a , int num){
         long startTime = System.nanoTime();
         boolean found = false;
-        for(int i=0;i<a.length;++i)
-            if(a[i]==num) found =true;
+        for(int i=0;i<a.length;++i){
+            if(a[i]==num) {
+                found =true;
+                break;
+            }
+        }
         
         if(found) System.out.println("Number Found");
         else System.out.println("Number Not Found"); 
@@ -58,7 +62,10 @@ public class Search {
         while(left<=right){
             int mid = (left+right)/2;
             
-            if(a[mid] == num) found =true;
+            if(a[mid] == num) {
+                found = true;
+                break;
+            }
             else if(a[mid] < num) left = mid+1;
             else right = mid-1;
         }
